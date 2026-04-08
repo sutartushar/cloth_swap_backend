@@ -2,8 +2,7 @@
   "watch": ["src"],
   "ext": "ts",
   "ignore": ["src/**/*.test.ts"],
-  "exec": "ts-node",
-  "env": {
-    "TS_NODE_TRANSPILE_ONLY": "true"
-  }
+  "exec": "tsc && node",
+  "args": "dist/index.js",
+  "delay": 500
 }
