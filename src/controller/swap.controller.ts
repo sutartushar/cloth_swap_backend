@@ -1,7 +1,7 @@
 import { Response } from "express";
-import pool from "../config/db.config";
+import pool from "../config/db.config.js";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
-import { AuthenticatedRequest } from "../types";
+import { AuthenticatedRequest } from "../types.js";
 
 interface ListingRow extends RowDataPacket {
   id: number;

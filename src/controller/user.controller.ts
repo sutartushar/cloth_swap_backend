@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import { RowDataPacket } from "mysql2";
-import pool from "../config/db.config";
+import pool from "../config/db.config.js";
 
 //generate JWT token
 const generateToken = (userId: number): string => {

@@ -3,13 +3,13 @@ config();
 
 import express, { Express } from "express";
 import cors from "cors";
-import pool from "./config/db.config";
+import pool from "./config/db.config.js";
 import colors from "colors";
-import userRouter from "./routes/user.routes";
-import listingRouter from "./routes/listing.routes";
-import swapRouter from "./routes/swap.routes";
-import chatRouter from "./routes/chat.routes";
-import calculatorRoutes from "./routes/calculator.routes";
+import userRouter from "./routes/user.routes.js";
+import listingRouter from "./routes/listing.routes.js";
+import swapRouter from "./routes/swap.routes.js";
+import chatRouter from "./routes/chat.routes.js";
+import calculatorRoutes from "./routes/calculator.routes.js";
 
 const app: Express = express();
 const port: string | number = process.env.PORT || 4000;

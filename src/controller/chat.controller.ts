@@ -1,7 +1,7 @@
 import { Response } from "express";
-import pool from "../config/db.config";
+import pool from "../config/db.config.js";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
-import { AuthenticatedRequest, MessageRow, SwapRow } from "../types";
+import { AuthenticatedRequest, MessageRow, SwapRow } from "../types.js";
 
 // helper — check if the logged in user is part of this swap
 const isSwapParticipant = (swap: SwapRow, userId: number): boolean => {

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { ResultSetHeader } from "mysql2/promise";
-import pool from "../config/db.config";
+import pool from "../config/db.config.js";
 
 interface AuthenticatedRequest extends Request {
   user?: any;

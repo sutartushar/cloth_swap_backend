@@ -1,6 +1,6 @@
 import express from "express";
-import { estimateClothingValue } from "../controller/calculator.controller";
-import authMiddleware from "../middleware/auth.middleware";
+import { estimateClothingValue } from "../controller/calculator.controller.js";
+import authMiddleware from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
