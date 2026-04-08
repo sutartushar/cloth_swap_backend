@@ -13,11 +13,15 @@ const poolConfig: any = {
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-  ssl: {
+};
+
+// Only add SSL if ca.pem exists
+if (fs.existsSync(caPemPath)) {
+  poolConfig.ssl = {
     ca: fs.readFileSync(caPemPath),
     rejectUnauthorized: true,
-  },
-};
+  };
+}
 
 const pool = mysql.createPool(poolConfig);
 
