@@ -1,8 +1,8 @@
-import express from "express";
+import express, { Router } from "express";
 import { estimateClothingValue } from "../controller/calculator.controller";
 import authMiddleware from "../middleware/auth.middleware";
 
-const router = express.Router();
+const router: Router = express.Router();
 
 router.post("/", authMiddleware, estimateClothingValue as any);
 

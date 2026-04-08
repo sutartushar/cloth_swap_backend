@@ -2,7 +2,6 @@
   "watch": ["src"],
   "ext": "ts",
   "ignore": ["src/**/*.test.ts"],
-  "exec": "tsc && node",
-  "args": "dist/index.js",
+  "exec": "tsc && node dist/index.js",
   "delay": 500
 }
