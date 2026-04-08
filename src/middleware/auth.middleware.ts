@@ -1,6 +1,6 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
-import pool from "../config/db.config.js";
+import pool from "../config/db.config";
 
 interface AuthenticatedRequest extends Request {
   user?: any;

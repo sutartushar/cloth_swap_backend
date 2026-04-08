@@ -1,5 +1,5 @@
 import { Response } from "express";
-import { AuthenticatedRequest } from "../types.js";
+import { AuthenticatedRequest } from "../types";
 
 // helper
 const getConditionMultiplier = (condition: string): number => {

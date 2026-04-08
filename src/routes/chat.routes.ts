@@ -1,6 +1,6 @@
 import express from "express";
-import { sendMessage, getMessages, getUnreadCount } from "../controller/chat.controller.js";
-import authMiddleware from "../middleware/auth.middleware.js";
+import { sendMessage, getMessages, getUnreadCount } from "../controller/chat.controller";
+import authMiddleware from "../middleware/auth.middleware";
 
 const router = express.Router();
 

@@ -2,8 +2,8 @@
   "watch": ["src"],
   "ext": "ts",
   "ignore": ["src/**/*.test.ts"],
-  "exec": "node --loader ts-node/esm",
+  "exec": "ts-node",
   "env": {
-    "NODE_OPTIONS": "--loader ts-node/esm --no-warnings=ExperimentalWarning"
+    "TS_NODE_TRANSPILE_ONLY": "true"
   }
 }
